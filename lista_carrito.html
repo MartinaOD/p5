@@ -1,0 +1,89 @@
+<!-- PÁGINA WEB ESTÁTICA (articulos en carrito) -->
+
+
+<!DOCTYPE html>
+
+<html lang="es">
+  <head> <!-- Lo que se cargará al abrir la página -->
+    <title>lista de artículos</title> <!-- Titulo visible en la pestaña del navegador -->
+    <meta charset = "utf-8">
+    <meta name = "viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="menu.css"> 
+    <link rel="stylesheet" href="lista_carrito.css"> 
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&display=swap" rel="stylesheet">   
+  </head>
+  <body>
+    <h1> ~ Artículos en tu carrito ~ </h1>
+
+    <h3> 
+        <p>
+          Aquí podrás llevar un seguimiento de qué CDs has comprado y a cuánto asciende el precio total de tu carrito.
+          Cuando consideres la compra finalizada, asegúrate de hacer click en el botón 'PAGAR AHORA' para finalizar tu proceso de compra.
+        </p>
+    </h3>
+
+    <!-- Tabla con el producto, la cantidad y el precio unidad/total-->
+
+    <table>
+      <thead>
+        <tr>
+          <th scope="col"><b>PRODUCTO</b></p></th>
+          <th scope="col"><p><b>UNIDADES</b></p></th>
+          <th scope="col"><p><b>PRECIO/ UNIDAD</b></p></th>
+          <th scope="col"><p><b>PRECIO TOTAL</b></p></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class = "producto">
+            <img class = "img" src="cd_seventeen.jpg" alt="No se pudo cargar la imagen">
+            SEVENTEEN - Sector 17
+          </td>
+          <td>2</td>
+          <td>25.95 €</td>
+          <td>51.90 €</td>
+        </tr>
+        <tr>
+          <td class = "producto">
+            <img class = "img" src="cd_zayn.jpg" alt="No se pudo cargar la imagen">
+            Zayn - Icarus Falls
+          </td>
+          <td>1</td>
+          <td>15.50 €</td>
+          <td>15.50 €</td>
+        </tr>
+        <tr>
+          <td class = "producto">
+            <img class = "img" src="cd_morat.jpg" alt="No se pudo cargar la imagen">
+            Morat - Balas Perdidas
+          </td>
+          <td>1</td>
+          <td>10 €</td>
+          <td>10 €</td>
+        </tr>
+        <tr>
+          <td class = "producto">
+            <img class = "img" src="cd_mecano.jpg" alt="No se pudo cargar la imagen">
+            Mecano - Descanso Dominical
+          </td>
+          <td>3</td>
+          <td>11 €</td>
+          <td>33 €</td>
+        </tr>
+      </tbody>
+      
+    <tfoot>
+      <tr>
+        <th scope="row" colspan="2">Precio Total de Compra</th>
+        <td>110.4 €</td>
+      </tr>
+  </tfoot>
+</table>
+
+<br>
+<a href="pago.html" class="boton">PAGAR AHORA</a>
+
+    
+    
+  </body>
+</html>
